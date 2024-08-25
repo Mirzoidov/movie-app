@@ -8,13 +8,13 @@ export default class Main extends Component {
     };
 
     componentDidMount() {
-        fetch('http://www.omdbapi.com/?i=tt3896198&apikey=a2a16f69&s=black')
+        fetch('https://www.omdbapi.com/?i=tt3896198&apikey=a2a16f69&s=black')
        .then(response => response.json())
        .then((data) => this.setState({movies: data.Search}));
     }
 
-    searchMovies = (text) => {
-        fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=a2a16f69&s=${text}`)
+    searchMovies = (text, type = "all" ) => {
+        fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=a2a16f69&s=${text}${type !== "all" ? `&type=${type}` : ""}`)
        .then(response => response.json())
        .then((data) => this.setState({movies: data.Search}));
     }
