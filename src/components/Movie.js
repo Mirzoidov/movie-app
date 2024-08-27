@@ -6,7 +6,7 @@ export default class Movie extends Component {
     return (
       <div key={imdbID} className='card'>
         <div className="card__image">
-            <img src={Poster} alt="" />
+            <img src={Poster} alt= {Title} />
         </div>
         <div className="card__info">
             <p>{Type}</p>

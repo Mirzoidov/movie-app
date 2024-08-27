@@ -20,8 +20,13 @@ export default class Main extends Component {
     }
 
   render() {
+    const movie = this.state.movies[0];
+    console.log(movie);
+    
+    
     return (
       <main className='container'>
+        <img src="" alt="" />
         <SearchBar  searchMovies={this.searchMovies}/>
         <Movies movies={this.state.movies}/>
       </main>
