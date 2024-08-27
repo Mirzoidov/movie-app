@@ -5,7 +5,7 @@ export default class extends Component {
     render() {
     const { movies =[] } = this.props;
     return (
-      <div className='movies'>
+      <div className='movies' id='movies'>
         {movies.length ? movies.map(movie => (<Movie key={movie.imdbID} {...movie}/>)) : (
           <section className="page_404">
             <div className="container">

@@ -19,11 +19,7 @@ export default class Main extends Component {
        .then((data) => this.setState({movies: data.Search}));
     }
 
-  render() {
-    const movie = this.state.movies[0];
-    console.log(movie);
-    
-    
+  render() {    
     return (
       <main className='container'>
         <img src="" alt="" />

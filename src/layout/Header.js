@@ -8,8 +8,8 @@ export default class Header extends Component {
         <div className="header__nav">
           <a href="#" className='brand__logo'>Creative Movie App</a>
           <ul>
-              <li><a href="#">Movies</a></li>
-              <li><a href="#">Serials</a></li>
+              <li><a href="#movies">Movies</a></li>
+              <li><a href="#movies">Serials</a></li>
               <li><a href="#">Logout</a></li>
           </ul>
         </div>
